@@ -1,0 +1,56 @@
+[
+  {
+    "Name": "Star Wars",
+    "Genre": "Science fiction",
+    "Year": "1977",
+    "Rating": "10"
+  },
+  {
+    "Name": "Repo! the genetic opera",
+    "Genre": "Musical",
+    "Year": "2008",
+    "Rating": "7"
+  },
+  {
+    "Name": "The Rocky horror picture show",
+    "Genre": "Musical",
+    "Year": "1975",
+    "Rating": "10"
+  },
+  {
+    "Name": "The thing",
+    "Genre": "Horror",
+    "Year": "1982",
+    "Rating": "10"
+  },
+  {
+    "Name": "The beauty and the beast",
+    "Genre": "Romance",
+    "Year": "1991",
+    "Rating": "9"
+  },
+  {
+    "Name": "Test",
+    "Genre": "Comedy",
+    "Year": "1990",
+    "Rating": "6"
+  },
+  {
+    "Name": "Star Wars",
+    "Genre": "Thriller",
+    "Year": "1222",
+    "Rating": "5"
+  },
+  {
+    "Name": "Star Wars",
+    "Genre": "Science fiction",
+    "Year": "1975",
+    "Rating": "6"
+  },
+  {
+    "Name": "John Timmie Johansson",
+    "Genre": "Thriller",
+    "Year": "1970",
+    "Rating": "3"
+  }
+]

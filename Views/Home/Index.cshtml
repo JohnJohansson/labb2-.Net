@@ -1,0 +1,19 @@
+﻿@*reading in the model from the models model*@
+@model List<labb2.Models.Model>
+@{
+    ViewData["Title"] = "Startsidan";
+}
+
+<h2>Start</h2>
+<br>
+<p>Filmer: </p>
+<br>
+@*prints out the movies on the index pages as a unordered list*@
+<ul>
+    @if(Model != null){
+        @foreach(var movie in Model)
+        {
+            <li>Namn: @movie.Name - Changer: @movie.Genre - Årtal: @movie.Year - Betyg: @movie.Rating</li>
+        }
+    }
+</ul>

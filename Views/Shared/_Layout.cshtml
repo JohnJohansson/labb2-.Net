@@ -1,0 +1,47 @@
+﻿@*the shard layout for all the pages*@
+
+<!DOCTYPE html>
+<html lang="sv">
+<!--Things put in this page shows up on all pages and connects back to the _ViewStart.cshtml file-->
+<head>
+    <!--Connects to the stylesheet in wwwrot-->
+    <link rel="stylesheet" href="~/css/reset.css" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    <!--Connects the the pages with the ViewData["Title"] = "Startsida";
+        code in this example the title is startsida the ViewData["Title"]is a var-->
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+
+    <partial name="_header"/>
+        <div class="main-wrapper">
+        <aside>
+            <nav>
+                <ul>
+                    <li>
+                        @*dynamicly shows the links we use the home controller then we use the asp-action and calling upon 
+                            public IActionResult Index() from the home controller
+                            we activated this in the _ViewImports file
+                        *@
+                        <a asp-controller="Home" asp-action="Index">Startsidan</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="About">Om sidan</a>
+                    </li>
+
+                    <li>
+                        <a asp-controller="Home" asp-action="page3">Sida tre</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content"><div class="title"><h1>@ViewData["h1"]</h1><h2>@ViewData["h2"]</h2></div><div class="body"> @ViewData["Body"] @RenderBody()</div></main>
+    </div> <!--Main wrapper end-->
+    <partial name="_footer"/>
+
+
+
+
+    <script src="~/js/main.js"></script>
+</body>
+</html>
